@@ -1,0 +1,25 @@
+# This file was created Thu Jun  6 17:15:24 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2022.4 (-:
+# 
+# Executable:   /usr/local/bin/gmx
+# Data prefix:  /usr/local
+# Working dir:  /home/lindseywhitmore/projects/lj/no_FE/switch/75_9/prod_out/modified_1515
+# Command line:
+#   gmx energy -f ener.edr -o dhdl_modified_1515.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Giant Rising Ordinary Mutants for A Clerical Setup
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "LJ (SR)"
+    0.000000    0.000000
