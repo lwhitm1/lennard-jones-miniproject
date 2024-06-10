@@ -1,0 +1,25 @@
+# This file was created Thu Jun  6 16:58:01 2024
+# Created by:
+#                      :-) GROMACS - gmx energy, 2022.4 (-:
+# 
+# Executable:   /usr/local/bin/gmx
+# Data prefix:  /usr/local
+# Working dir:  /home/lindseywhitmore/projects/lj/no_FE/shift/75_8/prod_out/modified_669
+# Command line:
+#   gmx energy -f ener.edr -o dhdl_modified_669.xvg
+# gmx energy is part of G R O M A C S:
+#
+# GROtesk MACabre and Sinister
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "LJ (SR)"
+    0.000000   94.988297
