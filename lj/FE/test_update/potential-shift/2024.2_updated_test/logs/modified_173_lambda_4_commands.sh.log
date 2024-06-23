@@ -1,0 +1,75 @@
+                      :-) GROMACS - gmx grompp, 2024.2 (-:
+
+Executable:   /home/lindseywhitmore/software/gromacs/pkgs/gromacs/2024.2/bin/gmx_mpi
+Data prefix:  /home/lindseywhitmore/software/gromacs/pkgs/gromacs/2024.2
+Working dir:  /home/lindseywhitmore/projects/lennard-jones-miniproject/lj/FE/test_update/potential-switch/2024.2_updated_test/test_out/modified_173/lambda_4
+Command line:
+  gmx_mpi grompp -f /home/lindseywhitmore/projects/lennard-jones-miniproject/lj/FE/test_update/potential-switch/2024.2_updated_test/test_out/modified_173/lambda_4/energy_eval.mdp -c /home/lindseywhitmore/projects/lennard-jones-miniproject/lj/FE/test_update/potential-switch/2024.2_updated_test/test_out/modified_173/lambda_4/modified_173.gro -p /home/lindseywhitmore/projects/lennard-jones-miniproject/lj/FE/test_update/potential-switch/2024.2_updated_test/potential-shift_start_files/ljs.top -o modified_173_lambda_4.tpr
+
+
+NOTE 1 [file /home/lindseywhitmore/projects/lennard-jones-miniproject/lj/FE/test_update/potential-switch/2024.2_updated_test/test_out/modified_173/lambda_4/energy_eval.mdp, line 43]:
+  For proper sampling of the (nearly) decoupled state, stochastic dynamics
+  should be used
+
+
+NOTE 2 [file /home/lindseywhitmore/projects/lennard-jones-miniproject/lj/FE/test_update/potential-switch/2024.2_updated_test/test_out/modified_173/lambda_4/energy_eval.mdp]:
+  You have set rlist larger than the interaction cut-off, but you also have
+  verlet-buffer-tolerance > 0. Will set rlist using
+  verlet-buffer-tolerance.
+
+
+NOTE 3 [file /home/lindseywhitmore/projects/lennard-jones-miniproject/lj/FE/test_update/potential-switch/2024.2_updated_test/test_out/modified_173/lambda_4/energy_eval.mdp]:
+  Setting nstcalcenergy (100) equal to nstenergy (1)
+
+Number of degrees of freedom in T-Coupling group rest is 3.00
+The integrator does not provide a ensemble temperature, there is no system ensemble temperature
+
+NOTE 4 [file /home/lindseywhitmore/projects/lennard-jones-miniproject/lj/FE/test_update/potential-switch/2024.2_updated_test/test_out/modified_173/lambda_4/energy_eval.mdp]:
+  NVE simulation with an initial temperature of zero: will use a Verlet
+  buffer of 10%. Check your energy drift!
+
+
+There were 4 NOTEs
+
+GROMACS reminds you: "I'm Not Gonna Die Here !" (Sphere)
+
+Setting the LD random seed to -287379457
+
+Generated 6 of the 6 non-bonded parameter combinations
+
+Excluding 1 bonded neighbours molecule type 'LJ1'
+
+Excluding 1 bonded neighbours molecule type 'LJ2'
+
+Coupling 1 copies of molecule type 'LJ2'
+Analysing residue names:
+There are:     2      Other residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+This run will generate roughly 0 Mb of data
+                      :-) GROMACS - gmx mdrun, 2024.2 (-:
+
+Executable:   /home/lindseywhitmore/software/gromacs/pkgs/gromacs/2024.2/bin/gmx_mpi
+Data prefix:  /home/lindseywhitmore/software/gromacs/pkgs/gromacs/2024.2
+Working dir:  /home/lindseywhitmore/projects/lennard-jones-miniproject/lj/FE/test_update/potential-switch/2024.2_updated_test/test_out/modified_173/lambda_4
+Command line:
+  gmx_mpi mdrun -s modified_173_lambda_4.tpr -dhdl dhdl_modified_173_lambda_4.xvg
+
+Reading file modified_173_lambda_4.tpr, VERSION 2024.2 (single precision)
+Can not increase nstlist because an NVE ensemble is used
+Using 1 MPI process
+Using 16 OpenMP threads 
+
+starting mdrun 'Lennard-Jones Spheres'
+0 steps,      0.0 ps.
+
+NOTE: 28 % of the run time was spent in pair search,
+      you might want to increase nstlist (this has no effect on accuracy)
+
+               Core t (s)   Wall t (s)        (%)
+       Time:        0.038        0.003     1485.6
+                 (ns/day)    (hour/ns)
+Performance:       33.992        0.706
+
+GROMACS reminds you: "I'm a Jerk" (F. Black)
+
