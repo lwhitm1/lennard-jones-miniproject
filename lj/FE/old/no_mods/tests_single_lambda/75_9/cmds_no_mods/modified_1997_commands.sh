@@ -1,7 +1,0 @@
-#!/bin/bash
-cd /home/lindseywhitmore/projects/lj/FE/no_mods/75_9/prod_out/modified_1997
-
-
-gmx grompp -f /home/lindseywhitmore/projects/lj/FE/no_mods/75_9/start_files/energy_eval.mdp -c /home/lindseywhitmore/projects/lj/FE/no_mods/75_9/prod_out/modified_1997/modified_1997.gro -p /home/lindseywhitmore/projects/lj/FE/no_mods/75_9/start_files/ljs.top -o modified_1997.tpr
-
-gmx mdrun -s modified_1997.tpr -dhdl dhdl_modified_1997.xvg
