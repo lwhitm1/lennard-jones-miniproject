@@ -23,7 +23,7 @@ def main(input_directory, output_file):
     for config_dir in os.listdir(input_directory):
         if config_dir.startswith("modified_"):
             config_number = int(config_dir.split('_')[1])
-            distance = config_number + 200 / 1000.0
+            distance = (config_number + 200) / 1000.0
             
             config_path = os.path.join(input_directory, config_dir)
             
