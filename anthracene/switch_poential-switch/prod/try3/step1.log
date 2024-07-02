@@ -1,0 +1,68 @@
+                      :-) GROMACS - gmx grompp, 2022.4 (-:
+
+Executable:   /usr/local/bin/gmx
+Data prefix:  /usr/local
+Working dir:  /home/lindseywhitmore/projects/lennard-jones-miniproject/anthracene/switch_poential-switch/prod/try3
+Command line:
+  gmx grompp -f expanded.mdp -c ../../NVT/nvt.gro -p ../../anthracene.top -o anthracene_prod.tpr -maxwarn 4
+
+
+NOTE 1 [file expanded.mdp, line 101]:
+  For proper sampling of the (nearly) decoupled state, stochastic dynamics
+  should be used
+
+
+NOTE 2 [file expanded.mdp]:
+  You have set rlist larger than the interaction cut-off, but you also have
+  verlet-buffer-tolerance > 0. Will set rlist using verlet-buffer-tolerance.
+
+Generating 1-4 interactions: fudge = 0.5
+Number of degrees of freedom in T-Coupling group System is 6477.00
+
+NOTE 3 [file expanded.mdp]:
+  This run will generate roughly 5599 Mb of data
+
+
+There were 3 notes
+
+GROMACS reminds you: "Bad times have a scientific value. These are occasions a good learner would not miss." (Ralph Waldo Emerson)
+
+Setting the LD random seed to -8978434
+
+Setting the lambda MC random seed to -472979601
+
+Generated 21 of the 21 non-bonded parameter combinations
+
+Generated 21 of the 21 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'COM'
+
+turning H bonds into constraints...
+
+Excluding 1 bonded neighbours molecule type 'SOL'
+
+turning H bonds into constraints...
+
+Coupling 1 copies of molecule type 'COM'
+
+Setting gen_seed to -270554804
+
+Velocities were taken from a Maxwell distribution at 300 K
+Analysing residue names:
+There are:     1      Other residues
+There are:  1073      Water residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+The largest distance between non-perturbed excluded atoms is 0.153 nm
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 300 K
+
+Calculated rlist for 1x1 atom pair-list as 0.903 nm, buffer size 0.003 nm
+
+Set rlist, assuming 4x4 atom pair-list, to 0.900 nm, buffer size 0.000 nm
+
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 36x36x36, spacing 0.089 0.089 0.089
+
+Estimate for the relative computational load of the PME mesh part: 0.52
