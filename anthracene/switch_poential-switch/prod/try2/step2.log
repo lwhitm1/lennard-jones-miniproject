@@ -1,0 +1,32 @@
+                      :-) GROMACS - gmx mdrun, 2022.4 (-:
+
+Executable:   /usr/local/bin/gmx
+Data prefix:  /usr/local
+Working dir:  /home/lindseywhitmore/projects/lennard-jones-miniproject/anthracene/switch_poential-switch/prod/try2
+Command line:
+  gmx mdrun -deffnm anthracene_prod
+
+Reading file anthracene_prod.tpr, VERSION 2022.4 (single precision)
+Changing nstlist from 10 to 100, rlist from 0.9 to 1.004
+
+Using 1 MPI thread
+Using 16 OpenMP threads 
+
+starting mdrun 'Anthracene Benzene Null Transform in water'
+100000000 steps, 200000.0 ps.
+
+WARNING: This run will generate roughly 3250 Mb of data
+
+
+-------------------------------------------------------
+Program:     gmx mdrun, version 2022.4
+Source file: src/gromacs/fileio/checkpoint.cpp (line 747)
+Function:    doVectorLow(XDR*, Enum, int, int, int*, T**, std::vector<_Tp, _Alloc>*, FILE*, CptElementType) [with T = int; AllocatorType = std::allocator<int>; Enum = StateFepEntry; XDR = XDR; FILE = _IO_FILE]::<lambda()>
+
+Assertion failed:
+Condition: nptr != nullptr
+With nval<0 we should have nptr!=NULL
+
+For more information and tips for troubleshooting, please check the GROMACS
+website at http://www.gromacs.org/Documentation/Errors
+-------------------------------------------------------
