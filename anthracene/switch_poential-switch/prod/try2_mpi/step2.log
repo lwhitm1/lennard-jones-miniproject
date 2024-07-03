@@ -1,0 +1,19 @@
+                      :-) GROMACS - gmx mdrun, 2024.2 (-:
+
+Executable:   /home/lindseywhitmore/software/gromacs/pkgs/gromacs/2024.2/bin/gmx_mpi
+Data prefix:  /home/lindseywhitmore/software/gromacs/pkgs/gromacs/2024.2
+Working dir:  /home/lindseywhitmore/projects/lennard-jones-miniproject/anthracene/switch_poential-switch/prod/try2_mpi
+Command line:
+  gmx_mpi mdrun -deffnm anthracene_prod
+
+Reading file anthracene_prod.tpr, VERSION 2024.2 (single precision)
+Changing nstlist from 10 to 50, rlist from 0.9 to 0.964
+
+Using 1 MPI process
+Using 16 OpenMP threads 
+
+starting mdrun 'Anthracene Benzene Null Transform in water'
+100000000 steps, 200000.0 ps.
+
+WARNING: This run will generate roughly 3250 Mb of data
+
