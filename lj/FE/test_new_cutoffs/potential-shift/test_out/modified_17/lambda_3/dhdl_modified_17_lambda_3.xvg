@@ -1,0 +1,38 @@
+# This file was created Wed Jul  3 15:26:40 2024
+# Created by:
+#                      :-) GROMACS - gmx mdrun, 2024.2 (-:
+# 
+# Executable:   /home/lindseywhitmore/software/gromacs/pkgs/gromacs/2024.2/bin/gmx_mpi
+# Data prefix:  /home/lindseywhitmore/software/gromacs/pkgs/gromacs/2024.2
+# Working dir:  /home/lindseywhitmore/projects/lennard-jones-miniproject/lj/FE/test_new_cutoffs/potential-shift/test_out/modified_17/lambda_3
+# Command line:
+#   gmx_mpi mdrun -s modified_17_lambda_3.tpr -dhdl dhdl_modified_17_lambda_3.xvg
+# gmx mdrun is part of G R O M A C S:
+#
+# GROup of MAchos and Cynical Suckers
+#
+@    title "dH/d\xl\f{} and \xD\f{}H"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "dH/d\xl\f{} and \xD\f{}H (kJ/mol [\xl\f{}]\S-1\N)"
+@TYPE xy
+@ subtitle "\xl\f{} state 3: vdw-lambda = 0.3000"
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Total Energy (kJ/mol)"
+@ s1 legend "dH/d\xl\f{} vdw-lambda = 0.3000"
+@ s2 legend "\xD\f{}H \xl\f{} to 0.0000"
+@ s3 legend "\xD\f{}H \xl\f{} to 0.1000"
+@ s4 legend "\xD\f{}H \xl\f{} to 0.2000"
+@ s5 legend "\xD\f{}H \xl\f{} to 0.3000"
+@ s6 legend "\xD\f{}H \xl\f{} to 0.4000"
+@ s7 legend "\xD\f{}H \xl\f{} to 0.5000"
+@ s8 legend "\xD\f{}H \xl\f{} to 0.6000"
+@ s9 legend "\xD\f{}H \xl\f{} to 0.7000"
+@ s10 legend "\xD\f{}H \xl\f{} to 0.8000"
+@ s11 legend "\xD\f{}H \xl\f{} to 0.9000"
+@ s12 legend "\xD\f{}H \xl\f{} to 1.0000"
+0.0000 26.414068 -229.16382 86791158. 314.09750 45.435373 0.0000000 -14.419316 -20.412385 -23.299507 -24.818856 -25.661529 -26.141108 -26.414068
