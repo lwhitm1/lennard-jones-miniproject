@@ -1,0 +1,117 @@
+base) lindseywhitmore@grays-peak:~/projects/lennard-jones-miniproject/anthracene/switch_poential-switch/prod/try2_mpi/test$ python analysis.py 
+Warning on use of the timeseries module: If the inherent timescales of the system are long compared to those being analyzed, this statistical inefficiency may be an underestimate.  The estimate presumes the use of many statistically independent samples.  Tests should be performed to assess whether this condition is satisfied.   Be cautious in the interpretation of the data.
+
+****** PyMBAR will use 64-bit JAX! *******
+* JAX is currently set to 32-bit bitsize *
+* which is its default.                  *
+*                                        *
+* PyMBAR requires 64-bit mode and WILL   *
+* enable JAX's 64-bit mode when called.  *
+*                                        *
+* This MAY cause problems with other     *
+* Uses of JAX in the same code.          *
+******************************************
+
+2024-07-16 09:57:12.486 | INFO     | alchemlyb.workflows.base:__init__:50 - Alchemlyb Version: f2.3.0
+2024-07-16 09:57:12.486 | INFO     | alchemlyb.workflows.base:__init__:51 - Set Temperature to 300 K.
+2024-07-16 09:57:12.486 | INFO     | alchemlyb.workflows.base:__init__:53 - Set Software to GROMACS.
+2024-07-16 09:57:12.486 | INFO     | alchemlyb.workflows.abfe:__init__:83 - Initialise Alchemlyb ABFE Workflow
+2024-07-16 09:57:12.486 | INFO     | alchemlyb.workflows.abfe:update_units:307 - Set unit to kcal/mol.
+2024-07-16 09:57:12.486 | INFO     | alchemlyb.workflows.abfe:__init__:85 - Finding files with prefix: dhdl, suffix: xvg under directory ./ produced by GROMACS
+2024-07-16 09:57:12.487 | INFO     | alchemlyb.workflows.abfe:__init__:102 - Found 1 xvg files.
+2024-07-16 09:57:12.487 | INFO     | alchemlyb.workflows.abfe:__init__:103 - Unsorted file list: 
+ dhdl.xvg
+2024-07-16 09:57:12.487 | INFO     | alchemlyb.workflows.abfe:__init__:106 - Using GROMACS parser to read the data.
+2024-07-16 09:57:12.849 | INFO     | alchemlyb.workflows.abfe:read:145 - Reading 24061 lines of u_nk from dhdl.xvg
+2024-07-16 09:57:12.960 | INFO     | alchemlyb.workflows.abfe:read:155 - Reading 24061 lines of dhdl from dhdl.xvg
+2024-07-16 09:57:12.960 | INFO     | alchemlyb.workflows.abfe:read:164 - Sort files according to the u_nk.
+2024-07-16 09:57:12.962 | INFO     | alchemlyb.workflows.abfe:read:184 - Sorted file list: 
+dhdl.xvg
+2024-07-16 09:57:12.962 | INFO     | alchemlyb.workflows.abfe:preprocess:333 - Start preprocessing with skiptime of 100 uncorrelation method of dhdl and threshold of 50
+2024-07-16 09:57:12.962 | INFO     | alchemlyb.workflows.abfe:preprocess:339 - Processing the u_nk data set with skiptime of 100.
+2024-07-16 09:57:13.087 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Running equilibration detection.
+2024-07-16 09:57:53.008 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:610 - Start index: 0.
+2024-07-16 09:57:53.008 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:611 - Statistical inefficiency: 206.29.
+2024-07-16 09:57:53.010 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:617 - Number of uncorrelated samples: 115.
+2024-07-16 09:57:53.011 | INFO     | alchemlyb.workflows.abfe:preprocess:357 - Take 115 uncorrelated u_nk for state 0.
+2024-07-16 09:57:53.035 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:608 - Running equilibration detection.
+2024-07-16 09:58:28.811 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:610 - Start index: 0.
+2024-07-16 09:58:28.811 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:611 - Statistical inefficiency: 114.94.
+2024-07-16 09:58:28.815 | DEBUG    | alchemlyb.preprocessing.subsampling:equilibrium_detection:617 - Number of uncorrelated samples: 205.
+2024-07-16 09:58:28.815 | INFO     | alchemlyb.workflows.abfe:preprocess:379 - Take 205 uncorrelated dHdl for state 0.
+2024-07-16 09:58:28.817 | INFO     | alchemlyb.workflows.abfe:estimate:421 - Start running estimator: MBAR,BAR,TI.
+2024-07-16 09:58:28.817 | INFO     | alchemlyb.workflows.abfe:estimate:430 - A total 205 lines of dHdl is used.
+2024-07-16 09:58:28.818 | INFO     | alchemlyb.workflows.abfe:estimate:438 - A total 115 lines of u_nk is used.
+2024-07-16 09:58:28.818 | INFO     | alchemlyb.workflows.abfe:estimate:442 - Run MBAR estimator.
+
+******* JAX 64-bit mode is now on! *******
+*     JAX is now set to 64-bit mode!     *
+*   This MAY cause problems with other   *
+*      uses of JAX in the same code.     *
+******************************************
+
+2024-07-16 09:58:35.449 | INFO     | alchemlyb.workflows.abfe:estimate:449 - Run BAR estimator.
+2024-07-16 09:58:35.511 | INFO     | alchemlyb.workflows.abfe:estimate:452 - Run TI estimator.
+2024-07-16 09:58:35.537 | INFO     | alchemlyb.workflows.abfe:generate_result:505 - Summarise the estimate into a dataframe.
+2024-07-16 09:58:35.538 | INFO     | alchemlyb.workflows.abfe:generate_result:507 - Generate the row names.
+2024-07-16 09:58:35.544 | INFO     | alchemlyb.workflows.abfe:generate_result:518 - use the stage name from u_nk
+2024-07-16 09:58:35.544 | INFO     | alchemlyb.workflows.abfe:generate_result:532 - Read the results from estimator MBAR
+2024-07-16 09:58:35.545 | INFO     | alchemlyb.workflows.abfe:generate_result:549 - Generate the staged result from estimator MBAR
+2024-07-16 09:58:35.545 | INFO     | alchemlyb.workflows.abfe:generate_result:568 - Stage vdw-lambda is from state 0 to state 7.
+2024-07-16 09:58:35.545 | INFO     | alchemlyb.workflows.abfe:generate_result:532 - Read the results from estimator BAR
+2024-07-16 09:58:35.546 | INFO     | alchemlyb.workflows.abfe:generate_result:549 - Generate the staged result from estimator BAR
+2024-07-16 09:58:35.546 | INFO     | alchemlyb.workflows.abfe:generate_result:568 - Stage vdw-lambda is from state 0 to state 7.
+2024-07-16 09:58:35.547 | INFO     | alchemlyb.workflows.abfe:generate_result:532 - Read the results from estimator TI
+2024-07-16 09:58:35.547 | INFO     | alchemlyb.workflows.abfe:generate_result:549 - Generate the staged result from estimator TI
+2024-07-16 09:58:35.547 | INFO     | alchemlyb.workflows.abfe:generate_result:568 - Stage vdw-lambda is from state 0 to state 7.
+2024-07-16 09:58:35.565 | INFO     | alchemlyb.workflows.abfe:generate_result:610 - Write results:
+                   MBAR  MBAR_Error       BAR  BAR_Error        TI  TI_Error
+States 0 -- 1  2.569178    0.191998  2.606923   0.187568  2.666633  0.171484
+       1 -- 2  3.292450    0.269197  3.131008   0.287508  3.119009  0.232740
+       2 -- 3  1.412754    0.233955  1.456575   0.211420  1.279492  0.155181
+       3 -- 4  0.154914    0.240765  0.232035   0.253164 -0.153942  0.166335
+       4 -- 5 -0.862221    0.266280 -0.860702   0.263613 -0.884975  0.137357
+       5 -- 6 -2.846682    0.315685 -2.765303   0.246930 -1.777328  0.171979
+       6 -- 7 -1.807327    0.148714 -1.839698   0.124931 -1.375077  0.178456
+Stages vdw     1.913065    0.797857  1.960838   0.530522  2.873812  0.640928
+       TOTAL   1.913065    0.797857  1.960838   0.610498  2.873812  0.640928
+2024-07-16 09:58:35.565 | INFO     | alchemlyb.workflows.abfe:plot_overlap_matrix:630 - Plot overlap matrix.
+2024-07-16 09:58:40.743 | INFO     | alchemlyb.workflows.abfe:plot_overlap_matrix:634 - Plot overlap matrix to ./ under O_MBAR.pdf.
+2024-07-16 09:58:40.754 | INFO     | alchemlyb.workflows.abfe:plot_ti_dhdl:661 - Plot TI dHdl.
+2024-07-16 09:58:40.993 | INFO     | alchemlyb.workflows.abfe:plot_ti_dhdl:671 - Plot TI dHdl to dhdl_TI.pdf under ./.
+2024-07-16 09:58:40.993 | INFO     | alchemlyb.workflows.abfe:plot_dF_state:705 - Plot dF states.
+2024-07-16 09:58:41.226 | INFO     | alchemlyb.workflows.abfe:plot_dF_state:715 - Plot dF state to dF_state.pdf under ./.
+2024-07-16 09:58:41.226 | INFO     | alchemlyb.workflows.abfe:plot_dF_state:705 - Plot dF states.
+2024-07-16 09:58:41.490 | INFO     | alchemlyb.workflows.abfe:plot_dF_state:715 - Plot dF state to dF_state_long.pdf under ./.
+2024-07-16 09:58:41.490 | INFO     | alchemlyb.workflows.abfe:check_convergence:752 - Start convergence analysis.
+2024-07-16 09:58:41.494 | INFO     | alchemlyb.workflows.abfe:check_convergence:753 - Checking data availability.
+2024-07-16 09:58:41.495 | INFO     | alchemlyb.workflows.abfe:check_convergence:758 - Subsampled u_nk is available.
+2024-07-16 09:58:41.495 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:78 - Start convergence analysis.
+2024-07-16 09:58:41.495 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:79 - Check data availability.
+2024-07-16 09:58:41.495 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:96 - Use MBAR estimator for convergence analysis.
+2024-07-16 09:58:41.495 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:98 - Begin forward analysis
+2024-07-16 09:58:41.495 | INFO     | alchemlyb.convergence.convergence:forward_backward_convergence:102 - Forward analysis: 10.00%
+Traceback (most recent call last):
+  File "/home/lindseywhitmore/projects/lennard-jones-miniproject/anthracene/switch_poential-switch/prod/try2_mpi/test/analysis.py", line 13, in <module>
+    workflow.run(skiptime=100, uncorr='dhdl', threshold=50,
+  File "/home/lindseywhitmore/anaconda3/lib/python3.11/site-packages/alchemlyb/workflows/abfe.py", line 294, in run
+    ax = self.check_convergence(forwrev, estimator="MBAR", dF_t="dF_t.pdf")
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lindseywhitmore/anaconda3/lib/python3.11/site-packages/alchemlyb/workflows/abfe.py", line 774, in check_convergence
+    convergence = forward_backward_convergence(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lindseywhitmore/anaconda3/lib/python3.11/site-packages/alchemlyb/convergence/convergence.py", line 106, in forward_backward_convergence
+    mean, error = _forward_backward_convergence_estimate(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lindseywhitmore/anaconda3/lib/python3.11/site-packages/alchemlyb/convergence/convergence.py", line 168, in _forward_backward_convergence_estimate
+    result = my_estimator.fit(sample)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lindseywhitmore/anaconda3/lib/python3.11/site-packages/alchemlyb/estimators/mbar_.py", line 136, in fit
+    bar.fit(u_nk)
+  File "/home/lindseywhitmore/anaconda3/lib/python3.11/site-packages/alchemlyb/estimators/bar_.py", line 106, in fit
+    uk = groups.get_group(self._states_[k])
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/lindseywhitmore/anaconda3/lib/python3.11/site-packages/pandas/core/groupby/groupby.py", line 1063, in get_group
+    raise KeyError(name)
+KeyError: 0.0
+
