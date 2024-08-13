@@ -1,0 +1,133 @@
+Warning on use of the timeseries module: If the inherent timescales of the system are long compared to those being analyzed, this statistical inefficiency may be an underestimate.  The estimate presumes the use of many statistically independent samples.  Tests should be performed to assess whether this condition is satisfied.   Be cautious in the interpretation of the data.
+
+****** PyMBAR will use 64-bit JAX! *******
+* JAX is currently set to 32-bit bitsize *
+* which is its default.                  *
+*                                        *
+* PyMBAR requires 64-bit mode and WILL   *
+* enable JAX's 64-bit mode when called.  *
+*                                        *
+* This MAY cause problems with other     *
+* Uses of JAX in the same code.          *
+******************************************
+
+2024-08-12 08:16:22.504 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:529 - Running statistical inefficiency analysis.
+2024-08-12 08:16:27.179 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:531 - Statistical inefficiency: 87.97.
+2024-08-12 08:16:27.180 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:537 - Number of uncorrelated samples: 11358.
+2024-08-12 08:16:27.828 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:529 - Running statistical inefficiency analysis.
+2024-08-12 08:16:27.863 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:531 - Statistical inefficiency: 1.00.
+2024-08-12 08:16:27.865 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:537 - Number of uncorrelated samples: 499751.
+/home/lindseywhitmore/anaconda3/envs/alchemlyb/lib/python3.12/site-packages/alchemlyb/estimators/mbar_.py:125: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
+  (len(groups.get_group(i)) if i in groups.groups else 0)
+/home/lindseywhitmore/anaconda3/envs/alchemlyb/lib/python3.12/site-packages/alchemlyb/estimators/bar_.py:97: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
+  (len(groups.get_group(i)) if i in groups.groups else 0)
+/home/lindseywhitmore/anaconda3/envs/alchemlyb/lib/python3.12/site-packages/alchemlyb/estimators/bar_.py:106: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
+  uk = groups.get_group(self._states_[k])
+/home/lindseywhitmore/anaconda3/envs/alchemlyb/lib/python3.12/site-packages/alchemlyb/estimators/bar_.py:111: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
+  uk1 = groups.get_group(self._states_[k + 1])
+
+******* JAX 64-bit mode is now on! *******
+*     JAX is now set to 64-bit mode!     *
+*   This MAY cause problems with other   *
+*      uses of JAX in the same code.     *
+******************************************
+
+/home/lindseywhitmore/anaconda3/envs/alchemlyb/lib/python3.12/site-packages/alchemlyb/estimators/bar_.py:97: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
+  (len(groups.get_group(i)) if i in groups.groups else 0)
+/home/lindseywhitmore/anaconda3/envs/alchemlyb/lib/python3.12/site-packages/alchemlyb/estimators/bar_.py:106: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
+  uk = groups.get_group(self._states_[k])
+/home/lindseywhitmore/anaconda3/envs/alchemlyb/lib/python3.12/site-packages/alchemlyb/estimators/bar_.py:111: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
+  uk1 = groups.get_group(self._states_[k + 1])
+FE differences in units of Kb_T between each lambda window (TI):
+           0.00      0.18      0.42  ...      0.76      0.86      1.00
+0.00   0.000000  4.284475  9.124965  ...  9.726149  6.280737  3.585447
+0.18  -4.284475  0.000000  4.840490  ...  5.441674  1.996262 -0.699028
+0.42  -9.124965 -4.840490  0.000000  ...  0.601183 -2.844228 -5.539518
+0.57 -11.130765 -6.846290 -2.005800  ... -1.404617 -4.850028 -7.545318
+0.68 -11.238865 -6.954390 -2.113899  ... -1.512716 -4.958127 -7.653418
+0.76  -9.726149 -5.441674 -0.601183  ...  0.000000 -3.445411 -6.140702
+0.86  -6.280737 -1.996262  2.844228  ...  3.445411  0.000000 -2.695290
+1.00  -3.585447  0.699028  5.539518  ...  6.140702  2.695290  0.000000
+
+[8 rows x 8 columns]
+
+Endpoint differences (TI)
+3.5854470660582747
+
+TI error
+          0.00      0.18      0.42  ...      0.76      0.86      1.00
+0.00  0.000000  0.028519  0.065272  ...  0.116376  0.131670  0.140139
+0.18  0.028519  0.000000  0.047110  ...  0.107249  0.123676  0.132657
+0.42  0.065272  0.047110  0.000000  ...  0.086787  0.106421  0.116737
+0.57  0.087092  0.074457  0.039668  ...  0.066732  0.090811  0.102706
+0.68  0.103320  0.092919  0.068290  ...  0.036965  0.071832  0.086382
+0.76  0.116376  0.107249  0.086787  ...  0.000000  0.041750  0.063601
+0.86  0.131670  0.123676  0.106421  ...  0.041750  0.000000  0.031777
+1.00  0.140139  0.132657  0.116737  ...  0.063601  0.031777  0.000000
+
+[8 rows x 8 columns]
+
+TI error endpoint difference
+0.14013893051483994
+FE differences in units of Kb_T between each lambda window (MBAR):
+           0.00      0.18      0.42  ...       0.76      0.86      1.00
+0.00   0.000000  4.293773  9.288163  ...  10.389101  6.279684  3.487252
+0.18  -4.293773  0.000000  4.994390  ...   6.095328  1.985911 -0.806521
+0.42  -9.288163 -4.994390  0.000000  ...   1.100938 -3.008480 -5.800911
+0.57 -11.471633 -7.177860 -2.183470  ...  -1.082532 -5.191950 -7.984381
+0.68 -11.818898 -7.525125 -2.530735  ...  -1.429797 -5.539215 -8.331646
+0.76 -10.389101 -6.095328 -1.100938  ...   0.000000 -4.109418 -6.901849
+0.86  -6.279684 -1.985911  3.008480  ...   4.109418  0.000000 -2.792432
+1.00  -3.487252  0.806521  5.800911  ...   6.901849  2.792432  0.000000
+
+[8 rows x 8 columns]
+
+Endpoint differences (MBAR)
+3.487252097423932
+
+MBAR error
+          0.00      0.18      0.42  ...      0.76      0.86      1.00
+0.00  0.000000  0.004223  0.009684  ...  0.016350  0.018850  0.019861
+0.18  0.004223  0.000000  0.007419  ...  0.015113  0.017787  0.018855
+0.42  0.009684  0.007419  0.000000  ...  0.012212  0.015399  0.016621
+0.57  0.012287  0.010584  0.005759  ...  0.009659  0.013465  0.014847
+0.68  0.014416  0.012995  0.009467  ...  0.006049  0.011156  0.012790
+0.76  0.016350  0.015113  0.012212  ...  0.000000  0.007753  0.009956
+0.86  0.018850  0.017787  0.015399  ...  0.007753  0.000000  0.003868
+1.00  0.019861  0.018855  0.016621  ...  0.009956  0.003868  0.000000
+
+[8 rows x 8 columns]
+
+MBAR error endpoint difference
+0.01986059849111661
+FE differences in units of Kb_T between each lambda window (BAR):
+           0.00      0.18      0.42  ...       0.76      0.86      1.00
+0.00   0.000000  4.294916  9.287293  ...  10.387015  6.276484  3.484656
+0.18  -4.294916  0.000000  4.992377  ...   6.092099  1.981569 -0.810260
+0.42  -9.287293 -4.992377  0.000000  ...   1.099723 -3.010808 -5.802637
+0.57 -11.470643 -7.175727 -2.183351  ...  -1.083628 -5.194159 -7.985987
+0.68 -11.816360 -7.521444 -2.529068  ...  -1.429345 -5.539876 -8.331704
+0.76 -10.387015 -6.092099 -1.099723  ...   0.000000 -4.110531 -6.902359
+0.86  -6.276484 -1.981569  3.010808  ...   4.110531  0.000000 -2.791829
+1.00  -3.484656  0.810260  5.802637  ...   6.902359  2.791829  0.000000
+
+[8 rows x 8 columns]
+
+Endpoint differences (BAR)
+3.484655844576322
+
+BAR error
+          0.00      0.18      0.42  ...      0.76      0.86      1.00
+0.00  0.000000  0.004319       NaN  ...       NaN       NaN       NaN
+0.18  0.004319  0.000000  0.007642  ...       NaN       NaN       NaN
+0.42       NaN  0.007642  0.000000  ...       NaN       NaN       NaN
+0.57       NaN       NaN  0.005931  ...       NaN       NaN       NaN
+0.68       NaN       NaN       NaN  ...  0.006078       NaN       NaN
+0.76       NaN       NaN       NaN  ...  0.000000  0.007876       NaN
+0.86       NaN       NaN       NaN  ...  0.007876  0.000000  0.003914
+1.00       NaN       NaN       NaN  ...       NaN  0.003914  0.000000
+
+[8 rows x 8 columns]
+
+BAR error endpoint difference
+nan
