@@ -1,0 +1,82 @@
+          :-) GROMACS - gmx grompp, 2024.3-dev-20240820-cc78a41fa8 (-:
+
+Executable:   /home/lindseywhitmore/software/test_gromacs_force_switch/pkgs-ForceSwitchTest/bin/gmx
+Data prefix:  /home/lindseywhitmore/software/test_gromacs_force_switch/pkgs-ForceSwitchTest
+Working dir:  /home/lindseywhitmore/projects/lennard-jones-miniproject/lj/FE/testing_gmx_changes/potential-shift/test_out/modified_1153/lambda_2
+Command line:
+  gmx grompp -f /home/lindseywhitmore/projects/lennard-jones-miniproject/lj/FE/testing_gmx_changes/potential-shift/test_out/modified_1153/lambda_2/energy_eval.mdp -c /home/lindseywhitmore/projects/lennard-jones-miniproject/lj/FE/testing_gmx_changes/potential-shift/test_out/modified_1153/lambda_2/modified_1153.gro -p /home/lindseywhitmore/projects/lennard-jones-miniproject/lj/FE/testing_gmx_changes/potential-shift/potential-shift_start_files/ljs.top -o modified_1153_lambda_2.tpr
+
+
+NOTE 1 [file /home/lindseywhitmore/projects/lennard-jones-miniproject/lj/FE/testing_gmx_changes/potential-shift/test_out/modified_1153/lambda_2/energy_eval.mdp, line 43]:
+  For proper sampling of the (nearly) decoupled state, stochastic dynamics
+  should be used
+
+
+NOTE 2 [file /home/lindseywhitmore/projects/lennard-jones-miniproject/lj/FE/testing_gmx_changes/potential-shift/test_out/modified_1153/lambda_2/energy_eval.mdp]:
+  Setting nstcalcenergy (100) equal to nstenergy (1)
+
+Number of degrees of freedom in T-Coupling group rest is 3.00
+The integrator does not provide a ensemble temperature, there is no system ensemble temperature
+
+NOTE 3 [file /home/lindseywhitmore/projects/lennard-jones-miniproject/lj/FE/testing_gmx_changes/potential-shift/test_out/modified_1153/lambda_2/energy_eval.mdp]:
+  NVE simulation with an initial temperature of zero: will use a Verlet
+  buffer of 10%. Check your energy drift!
+
+
+There were 3 NOTEs
+
+Back Off! I just backed up modified_1153_lambda_2.tpr to ./#modified_1153_lambda_2.tpr.1#
+
+GROMACS reminds you: "Throughout my academic career, I'd given some pretty good talks. But being considered the best speaker in the computer science department is like being known as the tallest of the Seven Dwarfs." (Randy Pausch)
+
+Setting the LD random seed to 703446988
+
+Generated 6 of the 6 non-bonded parameter combinations
+
+Excluding 1 bonded neighbours molecule type 'LJ1'
+
+Excluding 1 bonded neighbours molecule type 'LJ2'
+
+Coupling 1 copies of molecule type 'LJ2'
+Analysing residue names:
+There are:     2      Other residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+This run will generate roughly 0 Mb of data
+          :-) GROMACS - gmx mdrun, 2024.3-dev-20240820-cc78a41fa8 (-:
+
+Executable:   /home/lindseywhitmore/software/test_gromacs_force_switch/pkgs-ForceSwitchTest/bin/gmx
+Data prefix:  /home/lindseywhitmore/software/test_gromacs_force_switch/pkgs-ForceSwitchTest
+Working dir:  /home/lindseywhitmore/projects/lennard-jones-miniproject/lj/FE/testing_gmx_changes/potential-shift/test_out/modified_1153/lambda_2
+Command line:
+  gmx mdrun -s modified_1153_lambda_2.tpr -dhdl dhdl_modified_1153_lambda_2.xvg
+
+
+Back Off! I just backed up md.log to ./#md.log.1#
+Reading file modified_1153_lambda_2.tpr, VERSION 2024.3-dev-20240820-cc78a41fa8 (single precision)
+
+NOTE: Parallelization is limited by the small number of atoms,
+      only starting 1 thread-MPI ranks.
+      You can use the -nt and/or -ntmpi option to optimize the number of threads.
+
+Can not increase nstlist because an NVE ensemble is used
+Using 1 MPI thread
+Using 16 OpenMP threads 
+
+
+Back Off! I just backed up ener.edr to ./#ener.edr.1#
+
+Back Off! I just backed up dhdl_modified_1153_lambda_2.xvg to ./#dhdl_modified_1153_lambda_2.xvg.1#
+starting mdrun 'Lennard-Jones Spheres'
+0 steps,      0.0 ps.
+
+NOTE: 33 % of the run time was spent in pair search,
+      you might want to increase nstlist (this has no effect on accuracy)
+
+               Core t (s)   Wall t (s)        (%)
+       Time:        0.033        0.002     1465.7
+                 (ns/day)    (hour/ns)
+Performance:       38.074        0.630
+
+GROMACS reminds you: "Throughout my academic career, I'd given some pretty good talks. But being considered the best speaker in the computer science department is like being known as the tallest of the Seven Dwarfs." (Randy Pausch)
+
