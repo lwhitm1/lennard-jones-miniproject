@@ -1,0 +1,38 @@
+# This file was created Tue Aug 20 16:17:51 2024
+# Created by:
+#          :-) GROMACS - gmx mdrun, 2024.3-dev-20240820-cc78a41fa8 (-:
+# 
+# Executable:   /home/lindseywhitmore/software/test_gromacs_force_switch/pkgs-ForceSwitchTest/bin/gmx
+# Data prefix:  /home/lindseywhitmore/software/test_gromacs_force_switch/pkgs-ForceSwitchTest
+# Working dir:  /home/lindseywhitmore/projects/lennard-jones-miniproject/lj/FE/testing_gmx_changes/switch_potential-switch/test_out/modified_837/lambda_3
+# Command line:
+#   gmx mdrun -s modified_837_lambda_3.tpr -dhdl dhdl_modified_837_lambda_3.xvg
+# gmx mdrun is part of G R O M A C S:
+#
+# Gyas ROwers Mature At Cryogenic Speed
+#
+@    title "dH/d\xl\f{} and \xD\f{}H"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "dH/d\xl\f{} and \xD\f{}H (kJ/mol [\xl\f{}]\S-1\N)"
+@TYPE xy
+@ subtitle "\xl\f{} state 3: vdw-lambda = 0.3000"
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Total Energy (kJ/mol)"
+@ s1 legend "dH/d\xl\f{} vdw-lambda = 0.3000"
+@ s2 legend "\xD\f{}H \xl\f{} to 0.0000"
+@ s3 legend "\xD\f{}H \xl\f{} to 0.1000"
+@ s4 legend "\xD\f{}H \xl\f{} to 0.2000"
+@ s5 legend "\xD\f{}H \xl\f{} to 0.3000"
+@ s6 legend "\xD\f{}H \xl\f{} to 0.4000"
+@ s7 legend "\xD\f{}H \xl\f{} to 0.5000"
+@ s8 legend "\xD\f{}H \xl\f{} to 0.6000"
+@ s9 legend "\xD\f{}H \xl\f{} to 0.7000"
+@ s10 legend "\xD\f{}H \xl\f{} to 0.8000"
+@ s11 legend "\xD\f{}H \xl\f{} to 0.9000"
+@ s12 legend "\xD\f{}H \xl\f{} to 1.0000"
+0.0000 -0.14297709 0.12795295 -0.017324924 -0.017011598 -0.010823950 0.0000000 0.014473870 0.031808220 0.051368341 0.072642118 0.095215198 0.11875143 0.14297770
