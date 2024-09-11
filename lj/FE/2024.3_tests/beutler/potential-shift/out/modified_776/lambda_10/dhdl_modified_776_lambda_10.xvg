@@ -1,0 +1,38 @@
+# This file was created Fri Sep  6 14:26:54 2024
+# Created by:
+#                      :-) GROMACS - gmx mdrun, 2024.3 (-:
+# 
+# Executable:   /home/lindseywhitmore/software/2024.3_gromacs/pkgs/bin/gmx
+# Data prefix:  /home/lindseywhitmore/software/2024.3_gromacs/pkgs
+# Working dir:  /home/lindseywhitmore/projects/lennard-jones-miniproject/lj/FE/2024.3_tests/beutler/potential-shift/out/modified_776/lambda_10
+# Command line:
+#   gmx mdrun -s modified_776_lambda_10.tpr -dhdl dhdl_modified_776_lambda_10.xvg
+# gmx mdrun is part of G R O M A C S:
+#
+# Gallium Rubidium Oxygen Manganese Argon Carbon Silicon
+#
+@    title "dH/d\xl\f{} and \xD\f{}H"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "dH/d\xl\f{} and \xD\f{}H (kJ/mol [\xl\f{}]\S-1\N)"
+@TYPE xy
+@ subtitle "\xl\f{} state 10: vdw-lambda = 1.0000"
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Total Energy (kJ/mol)"
+@ s1 legend "dH/d\xl\f{} vdw-lambda = 1.0000"
+@ s2 legend "\xD\f{}H \xl\f{} to 0.0000"
+@ s3 legend "\xD\f{}H \xl\f{} to 0.1000"
+@ s4 legend "\xD\f{}H \xl\f{} to 0.2000"
+@ s5 legend "\xD\f{}H \xl\f{} to 0.3000"
+@ s6 legend "\xD\f{}H \xl\f{} to 0.4000"
+@ s7 legend "\xD\f{}H \xl\f{} to 0.5000"
+@ s8 legend "\xD\f{}H \xl\f{} to 0.6000"
+@ s9 legend "\xD\f{}H \xl\f{} to 0.7000"
+@ s10 legend "\xD\f{}H \xl\f{} to 0.8000"
+@ s11 legend "\xD\f{}H \xl\f{} to 0.9000"
+@ s12 legend "\xD\f{}H \xl\f{} to 1.0000"
+0.0000 0.0000000 0.18167816 0.18765652 0.099288911 0.038086962 -0.0024929286 -0.027317185 -0.040045861 -0.043459501 -0.039689448 -0.030382195 -0.016818391 0.0000000
