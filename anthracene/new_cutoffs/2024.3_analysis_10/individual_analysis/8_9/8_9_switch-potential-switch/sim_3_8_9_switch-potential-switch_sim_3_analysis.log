@@ -1,0 +1,169 @@
+Warning on use of the timeseries module: If the inherent timescales of the system are long compared to those being analyzed, this statistical inefficiency may be an underestimate.  The estimate presumes the use of many statistically independent samples.  Tests should be performed to assess whether this condition is satisfied.   Be cautious in the interpretation of the data.
+
+****** PyMBAR will use 64-bit JAX! *******
+* JAX is currently set to 32-bit bitsize *
+* which is its default.                  *
+*                                        *
+* PyMBAR requires 64-bit mode and WILL   *
+* enable JAX's 64-bit mode when called.  *
+*                                        *
+* This MAY cause problems with other     *
+* Uses of JAX in the same code.          *
+******************************************
+
+2024-09-22 15:23:30.342 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:520 - Running statistical inefficiency analysis.
+2024-09-22 15:23:31.085 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:522 - Statistical inefficiency: 101.58.
+2024-09-22 15:23:31.086 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:528 - Number of uncorrelated samples: 9800.
+2024-09-22 15:23:31.977 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:520 - Running statistical inefficiency analysis.
+2024-09-22 15:23:31.986 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:522 - Statistical inefficiency: 1.00.
+2024-09-22 15:23:31.987 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:528 - Number of uncorrelated samples: 999501.
+/projects/liwh2139/software/anaconda/envs/openff-toolkit/lib/python3.9/site-packages/alchemlyb/estimators/mbar_.py:106: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
+  (len(groups.get_group(i)) if i in groups.groups else 0)
+
+******* JAX 64-bit mode is now on! *******
+*     JAX is now set to 64-bit mode!     *
+*   This MAY cause problems with other   *
+*      uses of JAX in the same code.     *
+******************************************
+
+/projects/liwh2139/software/anaconda/envs/openff-toolkit/lib/python3.9/site-packages/alchemlyb/estimators/bar_.py:97: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
+  (len(groups.get_group(i)) if i in groups.groups else 0)
+/projects/liwh2139/software/anaconda/envs/openff-toolkit/lib/python3.9/site-packages/alchemlyb/estimators/bar_.py:106: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
+  uk = groups.get_group(self._states_[k])
+/projects/liwh2139/software/anaconda/envs/openff-toolkit/lib/python3.9/site-packages/alchemlyb/estimators/bar_.py:111: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
+  uk1 = groups.get_group(self._states_[k + 1])
+FE differences in units of Kb_T between each lambda window (TI):
+            0.00      0.09      0.18  ...      0.86      0.93      1.00
+0.000   0.000000  2.151510  4.227855  ...  6.014137  3.922753  3.249451
+0.090  -2.151510  0.000000  2.076345  ...  3.862627  1.771243  1.097941
+0.180  -4.227855 -2.076345  0.000000  ...  1.786281 -0.305103 -0.978404
+0.300  -6.866237 -4.714727 -2.638382  ... -0.852100 -2.943485 -3.616786
+0.420  -9.216543 -7.065033 -4.988688  ... -3.202406 -5.293790 -5.967092
+0.495 -10.437171 -8.285661 -6.209316  ... -4.423034 -6.514418 -7.187720
+0.570 -11.329903 -9.178393 -7.102048  ... -5.315766 -7.407151 -8.080452
+0.625 -11.672453 -9.520943 -7.444598  ... -5.658316 -7.749700 -8.423002
+0.680 -11.546647 -9.395137 -7.318792  ... -5.532510 -7.623894 -8.297196
+0.720 -11.029159 -8.877649 -6.801304  ... -5.015022 -7.106407 -7.779708
+0.760 -10.039015 -7.887505 -5.811159  ... -4.024878 -6.116262 -6.789563
+0.810  -8.138622 -5.987112 -3.910767  ... -2.124486 -4.215870 -4.889171
+0.860  -6.014137 -3.862627 -1.786281  ...  0.000000 -2.091384 -2.764686
+0.930  -3.922753 -1.771243  0.305103  ...  2.091384  0.000000 -0.673301
+1.000  -3.249451 -1.097941  0.978404  ...  2.764686  0.673301  0.000000
+
+[15 rows x 15 columns]
+
+Endpoint differences (TI)
+3.249451163777917
+
+TI error
+           0.00      0.09      0.18  ...      0.86      0.93      1.00
+0.000  0.000000  0.021223  0.037305  ...  0.141231  0.145432  0.146876
+0.090  0.021223  0.000000  0.021706  ...  0.137933  0.142232  0.143708
+0.180  0.037305  0.021706  0.000000  ...  0.133884  0.138308  0.139826
+0.300  0.054865  0.045713  0.031448  ...  0.125688  0.130390  0.131999
+0.420  0.074745  0.068310  0.059712  ...  0.115211  0.120324  0.122066
+0.495  0.086261  0.080749  0.073619  ...  0.107922  0.113364  0.115211
+0.570  0.096708  0.091825  0.085622  ...  0.098378  0.104319  0.106323
+0.625  0.104726  0.100234  0.094585  ...  0.090836  0.097239  0.099386
+0.680  0.112460  0.108290  0.103083  ...  0.080266  0.087447  0.089828
+0.720  0.119052  0.115121  0.110237  ...  0.071102  0.079118  0.081743
+0.760  0.125379  0.121653  0.117041  ...  0.055225  0.065223  0.068382
+0.810  0.134735  0.131274  0.127013  ...  0.027370  0.044196  0.048739
+0.860  0.141231  0.137933  0.133884  ...  0.000000  0.023825  0.031461
+0.930  0.145432  0.142232  0.138308  ...  0.023825  0.000000  0.013343
+1.000  0.146876  0.143708  0.139826  ...  0.031461  0.013343  0.000000
+
+[15 rows x 15 columns]
+
+TI error endpoint difference
+0.14687600814850296
+FE differences in units of Kb_T between each lambda window (MBAR):
+            0.00      0.09      0.18  ...      0.86      0.93      1.00
+0.000   0.000000  2.185153  4.290293  ...  6.199241  4.082054  3.401251
+0.090  -2.185153  0.000000  2.105141  ...  4.014088  1.896901  1.216099
+0.180  -4.290293 -2.105141  0.000000  ...  1.908948 -0.208239 -0.889042
+0.300  -6.929571 -4.744419 -2.639278  ... -0.730330 -2.847517 -3.528320
+0.420  -9.285906 -7.100753 -4.995612  ... -3.086665 -5.203852 -5.884654
+0.495 -10.527209 -8.342056 -6.236916  ... -4.327968 -6.445155 -7.125958
+0.570 -11.472591 -9.287439 -7.182298  ... -5.273350 -7.390537 -8.071340
+0.625 -11.860763 -9.675610 -7.570469  ... -5.661522 -7.778709 -8.459512
+0.680 -11.813317 -9.628164 -7.523024  ... -5.614076 -7.731263 -8.412066
+0.720 -11.348597 -9.163444 -7.058303  ... -5.149356 -7.266543 -7.947346
+0.760 -10.358200 -8.173047 -6.067906  ... -4.158959 -6.276146 -6.956949
+0.810  -8.368942 -6.183789 -4.078648  ... -2.169701 -4.286888 -4.967691
+0.860  -6.199241 -4.014088 -1.908948  ...  0.000000 -2.117187 -2.797990
+0.930  -4.082054 -1.896901  0.208239  ...  2.117187  0.000000 -0.680803
+1.000  -3.401251 -1.216099  0.889042  ...  2.797990  0.680803  0.000000
+
+[15 rows x 15 columns]
+
+Endpoint differences (MBAR)
+3.4012512014154748
+
+MBAR error
+           0.00      0.09      0.18  ...      0.86      0.93      1.00
+0.000  0.000000  0.001633  0.003101  ...  0.013063  0.013480  0.013688
+0.090  0.001633  0.000000  0.001682  ...  0.012704  0.013131  0.013345
+0.180  0.003101  0.001682  0.000000  ...  0.012284  0.012726  0.012946
+0.300  0.004928  0.003904  0.002547  ...  0.011566  0.012034  0.012267
+0.420  0.006612  0.005868  0.004899  ...  0.010708  0.011212  0.011462
+0.495  0.007564  0.006924  0.006119  ...  0.010089  0.010622  0.010885
+0.570  0.008490  0.007925  0.007233  ...  0.009337  0.009911  0.010192
+0.625  0.009203  0.008685  0.008059  ...  0.008635  0.009252  0.009553
+0.680  0.009994  0.009519  0.008951  ...  0.007703  0.008389  0.008720
+0.720  0.010641  0.010196  0.009668  ...  0.006717  0.007497  0.007865
+0.760  0.011390  0.010975  0.010487  ...  0.005083  0.006073  0.006525
+0.810  0.012401  0.012022  0.011578  ...  0.002232  0.003658  0.004338
+0.860  0.013063  0.012704  0.012284  ...  0.000000  0.001692  0.002607
+0.930  0.013480  0.013131  0.012726  ...  0.001692  0.000000  0.001056
+1.000  0.013688  0.013345  0.012946  ...  0.002607  0.001056  0.000000
+
+[15 rows x 15 columns]
+
+MBAR error endpoint difference
+0.013687728994162544
+FE differences in units of Kb_T between each lambda window (BAR):
+            0.00      0.09      0.18  ...      0.86      0.93      1.00
+0.000   0.000000  2.182786  4.287630  ...  6.194339  4.077520  3.397242
+0.090  -2.182786  0.000000  2.104844  ...  4.011553  1.894734  1.214456
+0.180  -4.287630 -2.104844  0.000000  ...  1.906709 -0.210110 -0.890388
+0.300  -6.925181 -4.742395 -2.637551  ... -0.730842 -2.847661 -3.527939
+0.420  -9.280997 -7.098212 -4.993368  ... -3.086659 -5.203478 -5.883756
+0.495 -10.524485 -8.341699 -6.236855  ... -4.330146 -6.446965 -7.127243
+0.570 -11.469260 -9.286474 -7.181630  ... -5.274921 -7.391740 -8.072018
+0.625 -11.856190 -9.673404 -7.568560  ... -5.661851 -7.778671 -8.458948
+0.680 -11.809418 -9.626632 -7.521788  ... -5.615080 -7.731899 -8.412177
+0.720 -11.344311 -9.161525 -7.056681  ... -5.149973 -7.266792 -7.947070
+0.760 -10.352929 -8.170143 -6.065299  ... -4.158590 -6.275409 -6.955687
+0.810  -8.363919 -6.181133 -4.076289  ... -2.169580 -4.286399 -4.966677
+0.860  -6.194339 -4.011553 -1.906709  ...  0.000000 -2.116819 -2.797097
+0.930  -4.077520 -1.894734  0.210110  ...  2.116819  0.000000 -0.680278
+1.000  -3.397242 -1.214456  0.890388  ...  2.797097  0.680278  0.000000
+
+[15 rows x 15 columns]
+
+Endpoint differences (BAR)
+3.3972417269655892
+
+BAR error
+           0.00      0.09      0.18  ...      0.86      0.93      1.00
+0.000  0.000000  0.002067       NaN  ...       NaN       NaN       NaN
+0.090  0.002067  0.000000  0.002158  ...       NaN       NaN       NaN
+0.180       NaN  0.002158  0.000000  ...       NaN       NaN       NaN
+0.300       NaN       NaN  0.003125  ...       NaN       NaN       NaN
+0.420       NaN       NaN       NaN  ...       NaN       NaN       NaN
+0.495       NaN       NaN       NaN  ...       NaN       NaN       NaN
+0.570       NaN       NaN       NaN  ...       NaN       NaN       NaN
+0.625       NaN       NaN       NaN  ...       NaN       NaN       NaN
+0.680       NaN       NaN       NaN  ...       NaN       NaN       NaN
+0.720       NaN       NaN       NaN  ...       NaN       NaN       NaN
+0.760       NaN       NaN       NaN  ...       NaN       NaN       NaN
+0.810       NaN       NaN       NaN  ...  0.002716       NaN       NaN
+0.860       NaN       NaN       NaN  ...  0.000000  0.002144       NaN
+0.930       NaN       NaN       NaN  ...  0.002144  0.000000  0.001236
+1.000       NaN       NaN       NaN  ...       NaN  0.001236  0.000000
+
+[15 rows x 15 columns]
+
+BAR error endpoint difference
+nan
