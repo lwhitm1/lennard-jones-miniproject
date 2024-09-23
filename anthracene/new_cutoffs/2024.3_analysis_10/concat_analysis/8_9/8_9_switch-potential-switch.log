@@ -1,0 +1,246 @@
+Warning on use of the timeseries module: If the inherent timescales of the system are long compared to those being analyzed, this statistical inefficiency may be an underestimate.  The estimate presumes the use of many statistically independent samples.  Tests should be performed to assess whether this condition is satisfied.   Be cautious in the interpretation of the data.
+
+****** PyMBAR will use 64-bit JAX! *******
+* JAX is currently set to 32-bit bitsize *
+* which is its default.                  *
+*                                        *
+* PyMBAR requires 64-bit mode and WILL   *
+* enable JAX's 64-bit mode when called.  *
+*                                        *
+* This MAY cause problems with other     *
+* Uses of JAX in the same code.          *
+******************************************
+
+2024-09-22 18:02:31.602 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:520 - Running statistical inefficiency analysis.
+2024-09-22 18:02:32.059 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:522 - Statistical inefficiency: 86.65.
+2024-09-22 18:02:32.061 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:528 - Number of uncorrelated samples: 11489.
+2024-09-22 18:02:36.144 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:520 - Running statistical inefficiency analysis.
+2024-09-22 18:02:36.152 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:522 - Statistical inefficiency: 1.00.
+2024-09-22 18:02:36.155 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:528 - Number of uncorrelated samples: 999501.
+2024-09-22 18:02:39.590 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:520 - Running statistical inefficiency analysis.
+2024-09-22 18:02:40.431 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:522 - Statistical inefficiency: 93.70.
+2024-09-22 18:02:40.433 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:528 - Number of uncorrelated samples: 10633.
+2024-09-22 18:02:44.606 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:520 - Running statistical inefficiency analysis.
+2024-09-22 18:02:44.621 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:522 - Statistical inefficiency: 1.00.
+2024-09-22 18:02:44.622 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:528 - Number of uncorrelated samples: 999501.
+2024-09-22 18:02:48.702 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:520 - Running statistical inefficiency analysis.
+2024-09-22 18:02:49.862 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:522 - Statistical inefficiency: 89.74.
+2024-09-22 18:02:49.863 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:528 - Number of uncorrelated samples: 11106.
+2024-09-22 18:02:54.033 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:520 - Running statistical inefficiency analysis.
+2024-09-22 18:02:54.043 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:522 - Statistical inefficiency: 1.00.
+2024-09-22 18:02:54.044 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:528 - Number of uncorrelated samples: 999501.
+2024-09-22 18:02:58.171 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:520 - Running statistical inefficiency analysis.
+2024-09-22 18:02:59.081 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:522 - Statistical inefficiency: 101.58.
+2024-09-22 18:02:59.082 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:528 - Number of uncorrelated samples: 9800.
+2024-09-22 18:03:03.231 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:520 - Running statistical inefficiency analysis.
+2024-09-22 18:03:03.246 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:522 - Statistical inefficiency: 1.00.
+2024-09-22 18:03:03.339 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:528 - Number of uncorrelated samples: 999501.
+2024-09-22 18:03:07.130 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:520 - Running statistical inefficiency analysis.
+2024-09-22 18:03:08.770 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:522 - Statistical inefficiency: 96.41.
+2024-09-22 18:03:08.773 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:528 - Number of uncorrelated samples: 10305.
+2024-09-22 18:03:12.804 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:520 - Running statistical inefficiency analysis.
+2024-09-22 18:03:12.820 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:522 - Statistical inefficiency: 1.00.
+2024-09-22 18:03:12.821 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:528 - Number of uncorrelated samples: 999501.
+2024-09-22 18:03:16.800 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:520 - Running statistical inefficiency analysis.
+2024-09-22 18:03:18.499 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:522 - Statistical inefficiency: 105.23.
+2024-09-22 18:03:18.501 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:528 - Number of uncorrelated samples: 9430.
+2024-09-22 18:03:22.527 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:520 - Running statistical inefficiency analysis.
+2024-09-22 18:03:22.543 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:522 - Statistical inefficiency: 1.00.
+2024-09-22 18:03:22.545 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:528 - Number of uncorrelated samples: 999501.
+2024-09-22 18:03:27.042 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:520 - Running statistical inefficiency analysis.
+2024-09-22 18:03:27.760 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:522 - Statistical inefficiency: 92.01.
+2024-09-22 18:03:27.761 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:528 - Number of uncorrelated samples: 10748.
+2024-09-22 18:03:31.920 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:520 - Running statistical inefficiency analysis.
+2024-09-22 18:03:31.934 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:522 - Statistical inefficiency: 1.00.
+2024-09-22 18:03:31.935 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:528 - Number of uncorrelated samples: 999501.
+2024-09-22 18:03:35.941 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:520 - Running statistical inefficiency analysis.
+2024-09-22 18:03:36.525 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:522 - Statistical inefficiency: 89.97.
+2024-09-22 18:03:36.531 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:528 - Number of uncorrelated samples: 11106.
+2024-09-22 18:03:41.669 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:520 - Running statistical inefficiency analysis.
+2024-09-22 18:03:41.684 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:522 - Statistical inefficiency: 1.00.
+2024-09-22 18:03:41.686 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:528 - Number of uncorrelated samples: 999501.
+2024-09-22 18:03:45.466 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:520 - Running statistical inefficiency analysis.
+2024-09-22 18:03:46.842 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:522 - Statistical inefficiency: 94.41.
+2024-09-22 18:03:46.847 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:528 - Number of uncorrelated samples: 10522.
+2024-09-22 18:03:51.307 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:520 - Running statistical inefficiency analysis.
+2024-09-22 18:03:51.315 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:522 - Statistical inefficiency: 1.00.
+2024-09-22 18:03:51.316 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:528 - Number of uncorrelated samples: 999501.
+2024-09-22 18:03:55.287 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:520 - Running statistical inefficiency analysis.
+2024-09-22 18:03:56.424 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:522 - Statistical inefficiency: 98.86.
+2024-09-22 18:03:56.425 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:528 - Number of uncorrelated samples: 10096.
+2024-09-22 18:04:00.299 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:520 - Running statistical inefficiency analysis.
+2024-09-22 18:04:00.311 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:522 - Statistical inefficiency: 1.00.
+2024-09-22 18:04:00.313 | DEBUG    | alchemlyb.preprocessing.subsampling:statistical_inefficiency:528 - Number of uncorrelated samples: 999501.
+/projects/liwh2139/software/anaconda/envs/openff-toolkit/lib/python3.9/site-packages/alchemlyb/estimators/mbar_.py:106: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
+  (len(groups.get_group(i)) if i in groups.groups else 0)
+
+******* JAX 64-bit mode is now on! *******
+*     JAX is now set to 64-bit mode!     *
+*   This MAY cause problems with other   *
+*      uses of JAX in the same code.     *
+******************************************
+
+/projects/liwh2139/software/anaconda/envs/openff-toolkit/lib/python3.9/site-packages/alchemlyb/estimators/bar_.py:97: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
+  (len(groups.get_group(i)) if i in groups.groups else 0)
+/projects/liwh2139/software/anaconda/envs/openff-toolkit/lib/python3.9/site-packages/alchemlyb/estimators/bar_.py:106: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
+  uk = groups.get_group(self._states_[k])
+/projects/liwh2139/software/anaconda/envs/openff-toolkit/lib/python3.9/site-packages/alchemlyb/estimators/bar_.py:111: FutureWarning: When grouping with a length-1 list-like, you will need to pass a length-1 tuple to get_group in a future version of pandas. Pass `(name,)` instead of `name` to silence this warning.
+  uk1 = groups.get_group(self._states_[k + 1])
+XVG file paths:
+/gpfs/alpine1/scratch/liwh2139/more_lambdas/new_cutoffs/2024.3/8_9/8_9_switch-potential-switch/sim_data/sim_4/8_9_switch-potential-switch.xvg
+/gpfs/alpine1/scratch/liwh2139/more_lambdas/new_cutoffs/2024.3/8_9/8_9_switch-potential-switch/sim_data/sim_1/8_9_switch-potential-switch.xvg
+/gpfs/alpine1/scratch/liwh2139/more_lambdas/new_cutoffs/2024.3/8_9/8_9_switch-potential-switch/sim_data/sim_6/8_9_switch-potential-switch.xvg
+/gpfs/alpine1/scratch/liwh2139/more_lambdas/new_cutoffs/2024.3/8_9/8_9_switch-potential-switch/sim_data/sim_3/8_9_switch-potential-switch.xvg
+/gpfs/alpine1/scratch/liwh2139/more_lambdas/new_cutoffs/2024.3/8_9/8_9_switch-potential-switch/sim_data/sim_5/8_9_switch-potential-switch.xvg
+/gpfs/alpine1/scratch/liwh2139/more_lambdas/new_cutoffs/2024.3/8_9/8_9_switch-potential-switch/sim_data/sim_7/8_9_switch-potential-switch.xvg
+/gpfs/alpine1/scratch/liwh2139/more_lambdas/new_cutoffs/2024.3/8_9/8_9_switch-potential-switch/sim_data/sim_0/8_9_switch-potential-switch.xvg
+/gpfs/alpine1/scratch/liwh2139/more_lambdas/new_cutoffs/2024.3/8_9/8_9_switch-potential-switch/sim_data/sim_9/8_9_switch-potential-switch.xvg
+/gpfs/alpine1/scratch/liwh2139/more_lambdas/new_cutoffs/2024.3/8_9/8_9_switch-potential-switch/sim_data/sim_2/8_9_switch-potential-switch.xvg
+/gpfs/alpine1/scratch/liwh2139/more_lambdas/new_cutoffs/2024.3/8_9/8_9_switch-potential-switch/sim_data/sim_8/8_9_switch-potential-switch.xvg
+FE differences in units of Kb_T between each lambda window (TI):
+            0.00      0.09      0.18  ...      0.86      0.93      1.00
+0.000   0.000000  2.170985  4.262062  ...  6.238769  4.155041  3.459596
+0.090  -2.170985  0.000000  2.091077  ...  4.067784  1.984056  1.288611
+0.180  -4.262062 -2.091077  0.000000  ...  1.976708 -0.107021 -0.802466
+0.300  -6.885783 -4.714798 -2.623721  ... -0.647013 -2.730742 -3.426187
+0.420  -9.220246 -7.049260 -4.958184  ... -2.981476 -5.065204 -5.760650
+0.495 -10.452749 -8.281764 -6.190687  ... -4.213979 -6.297708 -6.993153
+0.570 -11.392495 -9.221510 -7.130433  ... -5.153726 -7.237454 -7.932899
+0.625 -11.777172 -9.606187 -7.515110  ... -5.538403 -7.622131 -8.317576
+0.680 -11.716112 -9.545127 -7.454050  ... -5.477343 -7.561071 -8.256516
+0.720 -11.244462 -9.073477 -6.982400  ... -5.005692 -7.089421 -7.784866
+0.760 -10.258564 -8.087579 -5.996503  ... -4.019795 -6.103523 -6.798969
+0.810  -8.347745 -6.176760 -4.085683  ... -2.108976 -4.192704 -4.888149
+0.860  -6.238769 -4.067784 -1.976708  ...  0.000000 -2.083728 -2.779174
+0.930  -4.155041 -1.984056  0.107021  ...  2.083728  0.000000 -0.695446
+1.000  -3.459596 -1.288611  0.802466  ...  2.779174  0.695446  0.000000
+
+[15 rows x 15 columns]
+
+Endpoint differences (TI)
+3.4595956936656282
+
+TI error
+           0.00      0.09      0.18  ...      0.86      0.93      1.00
+0.000  0.000000  0.006530  0.011633  ...  0.042582  0.043964  0.044400
+0.090  0.006530  0.000000  0.006842  ...  0.041530  0.042946  0.043392
+0.180  0.011633  0.006842  0.000000  ...  0.040178  0.041640  0.042100
+0.300  0.017122  0.014306  0.009706  ...  0.037637  0.039194  0.039682
+0.420  0.022850  0.020823  0.017976  ...  0.034628  0.036314  0.036841
+0.495  0.026071  0.024314  0.021925  ...  0.032557  0.034345  0.034902
+0.570  0.028930  0.027357  0.025258  ...  0.030126  0.032050  0.032645
+0.625  0.031079  0.029620  0.027693  ...  0.027881  0.029949  0.030586
+0.680  0.033477  0.032127  0.030360  ...  0.024903  0.027198  0.027898
+0.720  0.035432  0.034160  0.032503  ...  0.022044  0.024608  0.025378
+0.760  0.037520  0.036321  0.034768  ...  0.017155  0.020345  0.021270
+0.810  0.040484  0.039376  0.037947  ...  0.008561  0.013889  0.015213
+0.860  0.042582  0.041530  0.040178  ...  0.000000  0.007469  0.009711
+0.930  0.043964  0.042946  0.041640  ...  0.007469  0.000000  0.004041
+1.000  0.044400  0.043392  0.042100  ...  0.009711  0.004041  0.000000
+
+[15 rows x 15 columns]
+
+TI error endpoint difference
+0.04440025689912505
+FE differences in units of Kb_T between each lambda window (MBAR):
+            0.00      0.09      0.18  ...      0.86      0.93      1.00
+0.000   0.000000  2.185545  4.291821  ...  6.235217  4.117392  3.434141
+0.090  -2.185545  0.000000  2.106276  ...  4.049672  1.931848  1.248596
+0.180  -4.291821 -2.106276  0.000000  ...  1.943396 -0.174428 -0.857680
+0.300  -6.933952 -4.748407 -2.642131  ... -0.698735 -2.816559 -3.499811
+0.420  -9.290440 -7.104895 -4.998619  ... -3.055223 -5.173048 -5.856300
+0.495 -10.530100 -8.344556 -6.238280  ... -4.294884 -6.412708 -7.095960
+0.570 -11.472967 -9.287422 -7.181146  ... -5.237750 -7.355574 -8.038826
+0.625 -11.859538 -9.673993 -7.567717  ... -5.624321 -7.742146 -8.425397
+0.680 -11.814656 -9.629111 -7.522835  ... -5.579439 -7.697264 -8.380516
+0.720 -11.355263 -9.169718 -7.063442  ... -5.120046 -7.237870 -7.921122
+0.760 -10.374774 -8.189230 -6.082954  ... -4.139558 -6.257382 -6.940634
+0.810  -8.399615 -6.214070 -4.107794  ... -2.164398 -4.282223 -4.965474
+0.860  -6.235217 -4.049672 -1.943396  ...  0.000000 -2.117825 -2.801076
+0.930  -4.117392 -1.931848  0.174428  ...  2.117825  0.000000 -0.683252
+1.000  -3.434141 -1.248596  0.857680  ...  2.801076  0.683252  0.000000
+
+[15 rows x 15 columns]
+
+Endpoint differences (MBAR)
+3.434140547631751
+
+MBAR error
+           0.00      0.09      0.18  ...      0.86      0.93      1.00
+0.000  0.000000  0.000511  0.000971  ...  0.004119  0.004256  0.004324
+0.090  0.000511  0.000000  0.000526  ...  0.004007  0.004148  0.004218
+0.180  0.000971  0.000526  0.000000  ...  0.003877  0.004022  0.004095
+0.300  0.001543  0.001222  0.000798  ...  0.003653  0.003807  0.003883
+0.420  0.002073  0.001841  0.001538  ...  0.003384  0.003550  0.003632
+0.495  0.002373  0.002173  0.001922  ...  0.003191  0.003366  0.003453
+0.570  0.002664  0.002488  0.002272  ...  0.002957  0.003145  0.003237
+0.625  0.002888  0.002726  0.002531  ...  0.002739  0.002941  0.003039
+0.680  0.003136  0.002987  0.002810  ...  0.002449  0.002674  0.002782
+0.720  0.003339  0.003200  0.003036  ...  0.002142  0.002396  0.002516
+0.760  0.003576  0.003447  0.003294  ...  0.001630  0.001951  0.002097
+0.810  0.003901  0.003783  0.003645  ...  0.000720  0.001181  0.001400
+0.860  0.004119  0.004007  0.003877  ...  0.000000  0.000547  0.000842
+0.930  0.004256  0.004148  0.004022  ...  0.000547  0.000000  0.000341
+1.000  0.004324  0.004218  0.004095  ...  0.000842  0.000341  0.000000
+
+[15 rows x 15 columns]
+
+MBAR error endpoint difference
+0.004324429636458998
+FE differences in units of Kb_T between each lambda window (BAR):
+            0.00      0.09      0.18  ...      0.86      0.93      1.00
+0.000   0.000000  2.184390  4.289926  ...  6.227779  4.111188  3.428610
+0.090  -2.184390  0.000000  2.105536  ...  4.043388  1.926798  1.244220
+0.180  -4.289926 -2.105536  0.000000  ...  1.937852 -0.178738 -0.861316
+0.300  -6.931241 -4.746851 -2.641315  ... -0.703463 -2.820053 -3.502631
+0.420  -9.286794 -7.102404 -4.996868  ... -3.059015 -5.175606 -5.858184
+0.495 -10.525942 -8.341551 -6.236015  ... -4.298163 -6.414753 -7.097331
+0.570 -11.468255 -9.283864 -7.178328  ... -5.240476 -7.357066 -8.039644
+0.625 -11.853487 -9.669096 -7.563560  ... -5.625708 -7.742298 -8.424876
+0.680 -11.808665 -9.624275 -7.518739  ... -5.580886 -7.697477 -8.380055
+0.720 -11.349940 -9.165550 -7.060014  ... -5.122162 -7.238752 -7.921330
+0.760 -10.369527 -8.185137 -6.079601  ... -4.141749 -6.258339 -6.940917
+0.810  -8.393211 -6.208821 -4.103285  ... -2.165433 -4.282023 -4.964601
+0.860  -6.227779 -4.043388 -1.937852  ...  0.000000 -2.116590 -2.799168
+0.930  -4.111188 -1.926798  0.178738  ...  2.116590  0.000000 -0.682578
+1.000  -3.428610 -1.244220  0.861316  ...  2.799168  0.682578  0.000000
+
+[15 rows x 15 columns]
+
+Endpoint differences (BAR)
+3.428610261135727
+
+BAR error
+           0.00      0.09      0.18  ...      0.86      0.93    1.00
+0.000  0.000000  0.000646       NaN  ...       NaN       NaN     NaN
+0.090  0.000646  0.000000  0.000675  ...       NaN       NaN     NaN
+0.180       NaN  0.000675  0.000000  ...       NaN       NaN     NaN
+0.300       NaN       NaN  0.000978  ...       NaN       NaN     NaN
+0.420       NaN       NaN       NaN  ...       NaN       NaN     NaN
+0.495       NaN       NaN       NaN  ...       NaN       NaN     NaN
+0.570       NaN       NaN       NaN  ...       NaN       NaN     NaN
+0.625       NaN       NaN       NaN  ...       NaN       NaN     NaN
+0.680       NaN       NaN       NaN  ...       NaN       NaN     NaN
+0.720       NaN       NaN       NaN  ...       NaN       NaN     NaN
+0.760       NaN       NaN       NaN  ...       NaN       NaN     NaN
+0.810       NaN       NaN       NaN  ...  0.000876       NaN     NaN
+0.860       NaN       NaN       NaN  ...  0.000000  0.000694     NaN
+0.930       NaN       NaN       NaN  ...  0.000694  0.000000  0.0004
+1.000       NaN       NaN       NaN  ...       NaN  0.000400  0.0000
+
+[15 rows x 15 columns]
+
+BAR error endpoint difference
+nan
+                          0.00          0.09  ...          0.93          1.00
+time  vdw-lambda                              ...                            
+100.0 0.090      -13859.529368 -13858.209720  ... -13827.821569 -13824.797293
+100.2 0.180      -13861.250356 -13861.709625  ... -13835.615480 -13832.634628
+100.4 0.495      -13817.495480 -13833.210706  ... -13824.315071 -13821.552894
+100.6 0.300      -13814.260991 -13819.220126  ... -13801.892051 -13799.173944
+100.8 0.495      -13766.156254 -13794.389142  ... -13801.010756 -13798.281541
+
+[5 rows x 15 columns]
+Index([  0.0,  0.09,  0.18,   0.3,  0.42, 0.495,  0.57, 0.625,  0.68,  0.72,
+        0.76,  0.81,  0.86,  0.93,   1.0],
+      dtype='object')
