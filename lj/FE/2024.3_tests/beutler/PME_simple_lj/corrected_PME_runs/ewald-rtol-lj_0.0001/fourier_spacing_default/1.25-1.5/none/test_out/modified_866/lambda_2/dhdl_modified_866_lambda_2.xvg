@@ -1,0 +1,38 @@
+# This file was created Mon Dec  2 03:04:40 2024
+# Created by:
+#                      :-) GROMACS - gmx mdrun, 2024.3 (-:
+# 
+# Executable:   /projects/liwh2139/software/gromacs/pkgs/gromacs_2024.3/bin/gmx
+# Data prefix:  /projects/liwh2139/software/gromacs/pkgs/gromacs_2024.3
+# Working dir:  /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_0.0001/fourier_spacing_default/1.25-1.5/none/test_out/modified_866/lambda_2
+# Command line:
+#   gmx mdrun -s modified_866_lambda_2.tpr -dhdl dhdl_modified_866_lambda_2.xvg
+# gmx mdrun is part of G R O M A C S:
+#
+# Gromacs Runs On Most of All Computer Systems
+#
+@    title "dH/d\xl\f{} and \xD\f{}H"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "dH/d\xl\f{} and \xD\f{}H (kJ/mol [\xl\f{}]\S-1\N)"
+@TYPE xy
+@ subtitle "\xl\f{} state 2: vdw-lambda = 0.2000"
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Total Energy (kJ/mol)"
+@ s1 legend "dH/d\xl\f{} vdw-lambda = 0.2000"
+@ s2 legend "\xD\f{}H \xl\f{} to 0.0000"
+@ s3 legend "\xD\f{}H \xl\f{} to 0.1000"
+@ s4 legend "\xD\f{}H \xl\f{} to 0.2000"
+@ s5 legend "\xD\f{}H \xl\f{} to 0.3000"
+@ s6 legend "\xD\f{}H \xl\f{} to 0.4000"
+@ s7 legend "\xD\f{}H \xl\f{} to 0.5000"
+@ s8 legend "\xD\f{}H \xl\f{} to 0.6000"
+@ s9 legend "\xD\f{}H \xl\f{} to 0.7000"
+@ s10 legend "\xD\f{}H \xl\f{} to 0.8000"
+@ s11 legend "\xD\f{}H \xl\f{} to 0.9000"
+@ s12 legend "\xD\f{}H \xl\f{} to 1.0000"
+0.0000 -0.18033962 0.18338394 -0.031924118 -0.017250473 0.0000000 0.019261924 0.040094246 0.062123429 0.085051581 0.10862940 0.13265571 0.15696356 0.18141664

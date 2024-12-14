@@ -1,0 +1,78 @@
+                      :-) GROMACS - gmx grompp, 2024.3 (-:
+
+Executable:   /projects/liwh2139/software/gromacs/pkgs/gromacs_2024.3/bin/gmx
+Data prefix:  /projects/liwh2139/software/gromacs/pkgs/gromacs_2024.3
+Working dir:  /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_0.0001/fourier_spacing_default/1.75-2.0/none/test_out/modified_10/lambda_9
+Command line:
+  gmx grompp -f /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_0.0001/fourier_spacing_default/1.75-2.0/none/test_out/modified_10/lambda_9/energy_eval.mdp -c /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_0.0001/fourier_spacing_default/1.75-2.0/none/test_out/modified_10/lambda_9/modified_10.gro -p /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_0.0001/fourier_spacing_default/1.75-2.0/none/just_PME_start_files/ljs.top -o modified_10_lambda_9.tpr
+
+
+NOTE 1 [file /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_0.0001/fourier_spacing_default/1.75-2.0/none/test_out/modified_10/lambda_9/energy_eval.mdp, line 46]:
+  For proper sampling of the (nearly) decoupled state, stochastic dynamics
+  should be used
+
+
+NOTE 2 [file /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_0.0001/fourier_spacing_default/1.75-2.0/none/test_out/modified_10/lambda_9/energy_eval.mdp]:
+  Setting nstcalcenergy (100) equal to nstenergy (1)
+
+Number of degrees of freedom in T-Coupling group rest is 3.00
+The integrator does not provide a ensemble temperature, there is no system ensemble temperature
+
+NOTE 3 [file /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_0.0001/fourier_spacing_default/1.75-2.0/none/test_out/modified_10/lambda_9/energy_eval.mdp]:
+  NVE simulation with an initial temperature of zero: will use a Verlet
+  buffer of 10%. Check your energy drift!
+
+
+There were 3 NOTEs
+
+GROMACS reminds you: "I know poetry is not dead, nor genius lost; nor has Mammon gained power over either, to bind or slay; they will both assert their existence, their presence, their liberty and strength again one day." (Jane Eyre in Jane Eyre by Charlotte Bronte)
+
+Setting the LD random seed to -713982145
+
+Generated 6 of the 6 non-bonded parameter combinations
+
+Excluding 1 bonded neighbours molecule type 'LJ1'
+
+Excluding 1 bonded neighbours molecule type 'LJ2'
+
+Coupling 1 copies of molecule type 'LJ2'
+Analysing residue names:
+There are:     2      Other residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+The largest distance between non-perturbed excluded atoms is 0.000 nm between atom 0 and 0
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 80x80x80, spacing 0.112 0.112 0.112
+
+This run will generate roughly 0 Mb of data
+                      :-) GROMACS - gmx mdrun, 2024.3 (-:
+
+Executable:   /projects/liwh2139/software/gromacs/pkgs/gromacs_2024.3/bin/gmx
+Data prefix:  /projects/liwh2139/software/gromacs/pkgs/gromacs_2024.3
+Working dir:  /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_0.0001/fourier_spacing_default/1.75-2.0/none/test_out/modified_10/lambda_9
+Command line:
+  gmx mdrun -s modified_10_lambda_9.tpr -dhdl dhdl_modified_10_lambda_9.xvg
+
+Reading file modified_10_lambda_9.tpr, VERSION 2024.3 (single precision)
+
+NOTE: Parallelization is limited by the small number of atoms,
+      only starting 1 thread-MPI ranks.
+      You can use the -nt and/or -ntmpi option to optimize the number of threads.
+
+Can not increase nstlist because an NVE ensemble is used
+Using 1 MPI thread
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 8 OpenMP threads 
+
+starting mdrun 'Lennard-Jones Spheres'
+0 steps,      0.0 ps.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:        0.466        0.058      798.5
+                 (ns/day)    (hour/ns)
+Performance:        1.482       16.198
+
+GROMACS reminds you: ""Everything organic and natural is good" - ignoring the fact that organic natural substances include arsenic and poo and crocodiles. And everything chemical is bad, ignoring the fact that... everything is chemicals." (Tim Minchin)
+
