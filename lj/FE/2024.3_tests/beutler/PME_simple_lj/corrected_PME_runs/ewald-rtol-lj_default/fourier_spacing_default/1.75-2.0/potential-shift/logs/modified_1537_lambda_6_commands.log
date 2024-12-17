@@ -1,0 +1,78 @@
+                      :-) GROMACS - gmx grompp, 2024.3 (-:
+
+Executable:   /projects/liwh2139/software/gromacs/pkgs/gromacs_2024.3/bin/gmx
+Data prefix:  /projects/liwh2139/software/gromacs/pkgs/gromacs_2024.3
+Working dir:  /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_default/fourier_spacing_default/1.75-2.0/potential-shift/test_out/modified_1537/lambda_6
+Command line:
+  gmx grompp -f /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_default/fourier_spacing_default/1.75-2.0/potential-shift/test_out/modified_1537/lambda_6/energy_eval.mdp -c /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_default/fourier_spacing_default/1.75-2.0/potential-shift/test_out/modified_1537/lambda_6/modified_1537.gro -p /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_default/fourier_spacing_default/1.75-2.0/potential-shift/potential-shift_start_files/ljs.top -o modified_1537_lambda_6.tpr
+
+
+NOTE 1 [file /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_default/fourier_spacing_default/1.75-2.0/potential-shift/test_out/modified_1537/lambda_6/energy_eval.mdp, line 48]:
+  For proper sampling of the (nearly) decoupled state, stochastic dynamics
+  should be used
+
+
+NOTE 2 [file /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_default/fourier_spacing_default/1.75-2.0/potential-shift/test_out/modified_1537/lambda_6/energy_eval.mdp]:
+  Setting nstcalcenergy (100) equal to nstenergy (1)
+
+Number of degrees of freedom in T-Coupling group rest is 3.00
+The integrator does not provide a ensemble temperature, there is no system ensemble temperature
+
+NOTE 3 [file /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_default/fourier_spacing_default/1.75-2.0/potential-shift/test_out/modified_1537/lambda_6/energy_eval.mdp]:
+  NVE simulation with an initial temperature of zero: will use a Verlet
+  buffer of 10%. Check your energy drift!
+
+
+There were 3 NOTEs
+
+GROMACS reminds you: "I couldn't give a shit about ribosomes." (Björn Forsberg, presenting his thesis, including two papers on ribosomes)
+
+Setting the LD random seed to -1095239057
+
+Generated 6 of the 6 non-bonded parameter combinations
+
+Excluding 1 bonded neighbours molecule type 'LJ1'
+
+Excluding 1 bonded neighbours molecule type 'LJ2'
+
+Coupling 1 copies of molecule type 'LJ2'
+Analysing residue names:
+There are:     2      Other residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+The largest distance between non-perturbed excluded atoms is 0.000 nm between atom 0 and 0
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 80x80x80, spacing 0.112 0.112 0.112
+
+This run will generate roughly 0 Mb of data
+                      :-) GROMACS - gmx mdrun, 2024.3 (-:
+
+Executable:   /projects/liwh2139/software/gromacs/pkgs/gromacs_2024.3/bin/gmx
+Data prefix:  /projects/liwh2139/software/gromacs/pkgs/gromacs_2024.3
+Working dir:  /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_default/fourier_spacing_default/1.75-2.0/potential-shift/test_out/modified_1537/lambda_6
+Command line:
+  gmx mdrun -s modified_1537_lambda_6.tpr -dhdl dhdl_modified_1537_lambda_6.xvg
+
+Reading file modified_1537_lambda_6.tpr, VERSION 2024.3 (single precision)
+
+NOTE: Parallelization is limited by the small number of atoms,
+      only starting 1 thread-MPI ranks.
+      You can use the -nt and/or -ntmpi option to optimize the number of threads.
+
+Can not increase nstlist because an NVE ensemble is used
+Using 1 MPI thread
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 8 OpenMP threads 
+
+starting mdrun 'Lennard-Jones Spheres'
+0 steps,      0.0 ps.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:        0.031        0.004      782.0
+                 (ns/day)    (hour/ns)
+Performance:       21.898        1.096
+
+GROMACS reminds you: "FORTRAN, the infantile disorder, by now nearly 20 years old, is hopelessly inadequate for whatever computer application you have in mind today: it is now too clumsy, too risky, and too expensive to use." (Edsger Dijkstra, 1970)
+

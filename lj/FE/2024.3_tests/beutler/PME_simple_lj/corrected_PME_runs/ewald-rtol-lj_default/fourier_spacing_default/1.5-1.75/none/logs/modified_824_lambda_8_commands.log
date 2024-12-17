@@ -1,0 +1,78 @@
+                      :-) GROMACS - gmx grompp, 2024.3 (-:
+
+Executable:   /projects/liwh2139/software/gromacs/pkgs/gromacs_2024.3/bin/gmx
+Data prefix:  /projects/liwh2139/software/gromacs/pkgs/gromacs_2024.3
+Working dir:  /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_default/fourier_spacing_default/1.5-1.75/none/test_out/modified_824/lambda_8
+Command line:
+  gmx grompp -f /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_default/fourier_spacing_default/1.5-1.75/none/test_out/modified_824/lambda_8/energy_eval.mdp -c /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_default/fourier_spacing_default/1.5-1.75/none/test_out/modified_824/lambda_8/modified_824.gro -p /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_default/fourier_spacing_default/1.5-1.75/none/just_PME_start_files/ljs.top -o modified_824_lambda_8.tpr
+
+
+NOTE 1 [file /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_default/fourier_spacing_default/1.5-1.75/none/test_out/modified_824/lambda_8/energy_eval.mdp, line 46]:
+  For proper sampling of the (nearly) decoupled state, stochastic dynamics
+  should be used
+
+
+NOTE 2 [file /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_default/fourier_spacing_default/1.5-1.75/none/test_out/modified_824/lambda_8/energy_eval.mdp]:
+  Setting nstcalcenergy (100) equal to nstenergy (1)
+
+Number of degrees of freedom in T-Coupling group rest is 3.00
+The integrator does not provide a ensemble temperature, there is no system ensemble temperature
+
+NOTE 3 [file /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_default/fourier_spacing_default/1.5-1.75/none/test_out/modified_824/lambda_8/energy_eval.mdp]:
+  NVE simulation with an initial temperature of zero: will use a Verlet
+  buffer of 10%. Check your energy drift!
+
+
+There were 3 NOTEs
+
+GROMACS reminds you: "When my information changes, I alter my conclusions. What do you do, sir?" (John Maynard Keynes)
+
+Setting the LD random seed to 2146950995
+
+Generated 6 of the 6 non-bonded parameter combinations
+
+Excluding 1 bonded neighbours molecule type 'LJ1'
+
+Excluding 1 bonded neighbours molecule type 'LJ2'
+
+Coupling 1 copies of molecule type 'LJ2'
+Analysing residue names:
+There are:     2      Other residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+The largest distance between non-perturbed excluded atoms is 0.000 nm between atom 0 and 0
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 80x80x80, spacing 0.112 0.112 0.112
+
+This run will generate roughly 0 Mb of data
+                      :-) GROMACS - gmx mdrun, 2024.3 (-:
+
+Executable:   /projects/liwh2139/software/gromacs/pkgs/gromacs_2024.3/bin/gmx
+Data prefix:  /projects/liwh2139/software/gromacs/pkgs/gromacs_2024.3
+Working dir:  /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_default/fourier_spacing_default/1.5-1.75/none/test_out/modified_824/lambda_8
+Command line:
+  gmx mdrun -s modified_824_lambda_8.tpr -dhdl dhdl_modified_824_lambda_8.xvg
+
+Reading file modified_824_lambda_8.tpr, VERSION 2024.3 (single precision)
+
+NOTE: Parallelization is limited by the small number of atoms,
+      only starting 1 thread-MPI ranks.
+      You can use the -nt and/or -ntmpi option to optimize the number of threads.
+
+Can not increase nstlist because an NVE ensemble is used
+Using 1 MPI thread
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 8 OpenMP threads 
+
+starting mdrun 'Lennard-Jones Spheres'
+0 steps,      0.0 ps.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:        0.031        0.004      781.4
+                 (ns/day)    (hour/ns)
+Performance:       21.560        1.113
+
+GROMACS reminds you: "When I got my first job as a programmer there were quite a number of women doing programming because there was no computer science education and people were hired from many different fields if it seemed like they could do the work. It was better then, probably, in terms of proportions, not necessarily in women being paid as much as men and so forth, but definitely, there were women around." (Barbara Liskov)
+

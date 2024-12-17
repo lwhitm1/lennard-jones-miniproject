@@ -1,0 +1,81 @@
+                      :-) GROMACS - gmx grompp, 2024.3 (-:
+
+Executable:   /projects/liwh2139/software/gromacs/pkgs/gromacs_2024.3/bin/gmx
+Data prefix:  /projects/liwh2139/software/gromacs/pkgs/gromacs_2024.3
+Working dir:  /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_default/fourier_spacing_default/1.25-1.5/none/test_out/modified_369/lambda_8
+Command line:
+  gmx grompp -f /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_default/fourier_spacing_default/1.25-1.5/none/test_out/modified_369/lambda_8/energy_eval.mdp -c /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_default/fourier_spacing_default/1.25-1.5/none/test_out/modified_369/lambda_8/modified_369.gro -p /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_default/fourier_spacing_default/1.25-1.5/none/just_PME_start_files/ljs.top -o modified_369_lambda_8.tpr
+
+
+NOTE 1 [file /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_default/fourier_spacing_default/1.25-1.5/none/test_out/modified_369/lambda_8/energy_eval.mdp, line 46]:
+  For proper sampling of the (nearly) decoupled state, stochastic dynamics
+  should be used
+
+
+NOTE 2 [file /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_default/fourier_spacing_default/1.25-1.5/none/test_out/modified_369/lambda_8/energy_eval.mdp]:
+  Setting nstcalcenergy (100) equal to nstenergy (1)
+
+Number of degrees of freedom in T-Coupling group rest is 3.00
+The integrator does not provide a ensemble temperature, there is no system ensemble temperature
+
+NOTE 3 [file /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_default/fourier_spacing_default/1.25-1.5/none/test_out/modified_369/lambda_8/energy_eval.mdp]:
+  NVE simulation with an initial temperature of zero: will use a Verlet
+  buffer of 10%. Check your energy drift!
+
+
+There were 3 NOTEs
+
+GROMACS reminds you: "I am driven by two main philosophies: know more today about the world than I knew yesterday and lessen the suffering of others. You'd be surprised how far that gets you." (Neil deGrasse Tyson)
+
+Setting the LD random seed to -25970753
+
+Generated 6 of the 6 non-bonded parameter combinations
+
+Excluding 1 bonded neighbours molecule type 'LJ1'
+
+Excluding 1 bonded neighbours molecule type 'LJ2'
+
+Coupling 1 copies of molecule type 'LJ2'
+Analysing residue names:
+There are:     2      Other residues
+Analysing residues not classified as Protein/DNA/RNA/Water and splitting into groups...
+
+The largest distance between non-perturbed excluded atoms is 0.000 nm between atom 0 and 0
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 80x80x80, spacing 0.112 0.112 0.112
+
+This run will generate roughly 0 Mb of data
+                      :-) GROMACS - gmx mdrun, 2024.3 (-:
+
+Executable:   /projects/liwh2139/software/gromacs/pkgs/gromacs_2024.3/bin/gmx
+Data prefix:  /projects/liwh2139/software/gromacs/pkgs/gromacs_2024.3
+Working dir:  /gpfs/alpine1/scratch/liwh2139/lennard-jones-miniproject/lj/FE/testing_gmx_changes/lj-pme/new_cutoffs/ewald-rtol-lj_default/fourier_spacing_default/1.25-1.5/none/test_out/modified_369/lambda_8
+Command line:
+  gmx mdrun -s modified_369_lambda_8.tpr -dhdl dhdl_modified_369_lambda_8.xvg
+
+Reading file modified_369_lambda_8.tpr, VERSION 2024.3 (single precision)
+
+NOTE: Parallelization is limited by the small number of atoms,
+      only starting 1 thread-MPI ranks.
+      You can use the -nt and/or -ntmpi option to optimize the number of threads.
+
+Can not increase nstlist because an NVE ensemble is used
+Using 1 MPI thread
+
+Non-default thread affinity set, disabling internal thread affinity
+
+Using 8 OpenMP threads 
+
+starting mdrun 'Lennard-Jones Spheres'
+0 steps,      0.0 ps.
+
+NOTE: 45 % of the run time was spent in pair search,
+      you might want to increase nstlist (this has no effect on accuracy)
+
+               Core t (s)   Wall t (s)        (%)
+       Time:        1.150        0.144      799.5
+                 (ns/day)    (hour/ns)
+Performance:        0.601       39.966
+
+GROMACS reminds you: "I invented the term 'Object-Oriented', and I can tell you I did not have C++ in mind." (Alan Kay, author of Smalltalk)
+
